@@ -1,7 +1,7 @@
 .photos-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 3rem;
     max-width: 960px;
     margin: 130px auto 100px;
 
@@ -56,17 +56,31 @@
 
 
 
-@media (max-width: 687px) {
+@media (max-width: 870px) {
     .photos-list {
         grid-template-columns: repeat(2, 1fr);
         margin-top:100px;
+
+        img {
+            width: 300px;
+            height: auto;
+        }
     }
 
-//     .imageContainer {
-//         div {
-//             width: 80vw;
-//             height: auto;
-//         }
-// }
+}
+
+
+@media (max-width: 670px) {
+    .photos-list {
+        grid-template-columns: 1fr;
+        margin-top:100px;
+        text-align: center;
+
+        img {
+            width: 300px;
+            height: auto;
+        }
+    }
+
 }
 

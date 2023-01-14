@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
+html { 
+   overflow-x: hidden;
+}
+
 html,
 body {
   padding: 0;
@@ -44,7 +48,7 @@ img {
   background-position: top center;
   background-attachment: fixed;
   background-size: cover;
-}
+} 
 
 @media (max-width: 587px) {
   .mainImage {
