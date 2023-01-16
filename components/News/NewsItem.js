@@ -22,6 +22,7 @@ const NewsItem = ({el}) => {
             <div className={classes.imageWrapper}>
                   <Image src={el.image} alt={el.title}
                   width="320" height="200"
+                  priority={true}
                 //   layout="responsive"
                   />
             </div>

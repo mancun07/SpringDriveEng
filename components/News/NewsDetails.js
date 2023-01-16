@@ -62,6 +62,7 @@ let video = null;
             <div className={classes['image-wrapper']}>
                 <Image src={props.singleNews.image} alt={props.singleNews.title}
                 width="600" height="300" 
+                priority={true}
                 />
             </div>
             <p>{day < 10 ? '0' : ''}{day}{'.'}{month < 10 ? '0' : ''}{month}{'.'}{year}</p>
