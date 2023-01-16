@@ -6,7 +6,6 @@ import Head from 'next/head'
 
 const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.op8yb.mongodb.net/JACKETS?retryWrites=true&w=majority`
 
-// const url = new URLSearchParams(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.op8yb.mongodb.net/JACKETS?retryWrites=true&w=majority`)
 
 const NewsPage = (props) => {
 

@@ -21,7 +21,7 @@ const NewsItem = ({el}) => {
         <div className={classes.newsItem}>
             <div className={classes.imageWrapper}>
                   <Image src={el.image} alt={el.title}
-                  width="200" height="130"
+                  width="320" height="200"
                 //   layout="responsive"
                   />
             </div>

@@ -6,6 +6,7 @@ import React from 'react'
 import MembersList from '../../components/Home/MembersList'
 import { useDispatch } from 'react-redux'
 import { navbarActions } from '../../store/navbarSlice'
+import Presentation from '@/components/Home/Presentation'
 
 
 
@@ -57,6 +58,7 @@ const HomePage = () => {
         <meta name="description" content="Official website of the rock band Spring Drive. News, concerts, photo albums, music and much more." />
       </Head>
       <SwiperSlider images={images}/>
+      {/* <Presentation /> */}
       <Description socials={socials}/>
       <MembersList members={members}/>
     </Fragment>

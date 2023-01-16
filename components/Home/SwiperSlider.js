@@ -46,12 +46,20 @@ export default function SwiperSlider(props) {
                     <Image src={el.src} alt={el.title} 
                     //  width="100vw" height="100vh"
                     layout="fill"
-                    priority={true}
+                    // priority={true}
                     />
                   </SwiperSlide> 
                   )
               })}
       </Swiper>
+      {/* <video
+      controls
+       autoPlay
+       loop
+       muted
+      src="video534.mp4"
+      ></video> */}
+
     </Fragment>
   )
 }
