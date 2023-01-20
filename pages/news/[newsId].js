@@ -28,10 +28,11 @@ export const getStaticPaths = async () => {
     const articlesCollection = db.collection('articles2');
 
     const articles = await articlesCollection.find({}, {_id: '604e6d23db7eb5a2dd556fc4'}).toArray();
+    console.log(articles)
     client.close();
 
     return {
-        fallback: 'blocking',
+        fallback: false,
         paths: articles.map(el => ({
             params: {newsId: el._id.toString()}
         }))
@@ -67,7 +68,8 @@ export const getStaticProps = async (context) => {
                 videolink: selectedNews.videolink,
                 date: Date.parse(selectedNews.date),
             }
-        }
+        },
+        revalidate: 3600,
     }
 
 } 
