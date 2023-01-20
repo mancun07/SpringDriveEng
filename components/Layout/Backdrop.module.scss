@@ -9,7 +9,6 @@
     left:0;
     right:0;
     bottom:0;
-    opacity: 0.9;
     animation: anim1 .3s ease-in-out forwards;
 }
 
@@ -20,7 +19,7 @@
       }
     
       to {
-        opacity:0.9;
+        opacity:1;
         transform: scale(1);
       }
 }
