@@ -59,7 +59,7 @@ export const getStaticProps = async() => {
                 date: Date.parse(item.date)
             }))
         },
-        revalidate: 1000
+        revalidate: 3600
     }
 
 
