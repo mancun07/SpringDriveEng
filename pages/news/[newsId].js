@@ -32,10 +32,10 @@ export const getStaticPaths = async () => {
     client.close();
 
     return {
-        fallback: false,
         paths: articles.map(el => ({
             params: {newsId: el._id.toString()}
-        }))
+        })),
+        fallback: false,
     }
 
 }
