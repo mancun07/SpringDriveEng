@@ -56,9 +56,9 @@ let video = null;
 
     return (
         <div className={classes.singleNews}>
-            <span className={classes.btn}>
+            <button className={classes.btn}>
                 <Link href={'/'}>Back to all news</Link>
-            </span>
+            </button>
             <div className={classes['image-wrapper']}>
                 <Image src={props.singleNews.image} alt={props.singleNews.title}
                 width="600" height="300" 
